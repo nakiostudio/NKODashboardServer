@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077F16AF18C204E000876BF0 /* NKOAppleScriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 077F16AE18C204E000876BF0 /* NKOAppleScriptManager.m */; };
+		077F16B218C2079A00876BF0 /* NKOTriggerCommandSocketEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 077F16B118C2079A00876BF0 /* NKOTriggerCommandSocketEvent.m */; };
+		07B9152C18BF8F5A00898E9B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9152B18BF8F5A00898E9B /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07B9152E18BF8FBA00898E9B /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B9152D18BF8FBA00898E9B /* Quartz.framework */; };
+		07BB93E218C0F5C800FE287F /* NKOAppDiscoverer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BB93E118C0F5C800FE287F /* NKOAppDiscoverer.m */; };
+		C1B6700918BF6185000136AC /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B6700718BF6185000136AC /* AppleScriptKit.framework */; };
+		C1B6700A18BF6185000136AC /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B6700818BF6185000136AC /* AppleScriptObjC.framework */; };
+		C1C7675818C10CF80081AA09 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7674F18C10CF80081AA09 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C1C7675918C10CF80081AA09 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7675118C10CF80081AA09 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C1C7675A18C10CF80081AA09 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7675318C10CF80081AA09 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C1C7675B18C10CF80081AA09 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7675518C10CF80081AA09 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C1C7675C18C10CF80081AA09 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7675718C10CF80081AA09 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C1C7675F18C10E5A0081AA09 /* NKOBonjourAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7675E18C10E5A0081AA09 /* NKOBonjourAPI.m */; };
+		C1C7677418C118640081AA09 /* NSImage+NKO.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7677318C118640081AA09 /* NSImage+NKO.m */; };
+		C1C7677718C11B660081AA09 /* NKOSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7677618C11B660081AA09 /* NKOSocketManager.m */; };
 		C1F8D6E118BE974B00879533 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F8D6E018BE974B00879533 /* Cocoa.framework */; };
 		C1F8D6EB18BE974B00879533 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1F8D6E918BE974B00879533 /* InfoPlist.strings */; };
 		C1F8D6ED18BE974B00879533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F8D6EC18BE974B00879533 /* main.m */; };
@@ -18,6 +33,7 @@
 		C1F8D70118BE974B00879533 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F8D6E018BE974B00879533 /* Cocoa.framework */; };
 		C1F8D70918BE974B00879533 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1F8D70718BE974B00879533 /* InfoPlist.strings */; };
 		C1F8D70B18BE974B00879533 /* Dashboard_ServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F8D70A18BE974B00879533 /* Dashboard_ServerTests.m */; };
+		C1F8D75E18BEA2B100879533 /* QServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F8D75D18BEA2B100879533 /* QServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +47,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		077F16AD18C204E000876BF0 /* NKOAppleScriptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKOAppleScriptManager.h; path = Service/NKOAppleScriptManager.h; sourceTree = "<group>"; };
+		077F16AE18C204E000876BF0 /* NKOAppleScriptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKOAppleScriptManager.m; path = Service/NKOAppleScriptManager.m; sourceTree = "<group>"; };
+		077F16B018C2079A00876BF0 /* NKOTriggerCommandSocketEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKOTriggerCommandSocketEvent.h; path = Service/NKOTriggerCommandSocketEvent.h; sourceTree = "<group>"; };
+		077F16B118C2079A00876BF0 /* NKOTriggerCommandSocketEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKOTriggerCommandSocketEvent.m; path = Service/NKOTriggerCommandSocketEvent.m; sourceTree = "<group>"; };
+		07B9152A18BF8F5A00898E9B /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		07B9152B18BF8F5A00898E9B /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		07B9152D18BF8FBA00898E9B /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		07BB93E018C0F5C800FE287F /* NKOAppDiscoverer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKOAppDiscoverer.h; path = Service/NKOAppDiscoverer.h; sourceTree = "<group>"; };
+		07BB93E118C0F5C800FE287F /* NKOAppDiscoverer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKOAppDiscoverer.m; path = Service/NKOAppDiscoverer.m; sourceTree = "<group>"; };
+		C1B6700718BF6185000136AC /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = System/Library/Frameworks/AppleScriptKit.framework; sourceTree = SDKROOT; };
+		C1B6700818BF6185000136AC /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		C1C7674D18C10CF80081AA09 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		C1C7674E18C10CF80081AA09 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		C1C7674F18C10CF80081AA09 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		C1C7675018C10CF80081AA09 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		C1C7675118C10CF80081AA09 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		C1C7675218C10CF80081AA09 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		C1C7675318C10CF80081AA09 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		C1C7675418C10CF80081AA09 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		C1C7675518C10CF80081AA09 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		C1C7675618C10CF80081AA09 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		C1C7675718C10CF80081AA09 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		C1C7675D18C10E590081AA09 /* NKOBonjourAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKOBonjourAPI.h; sourceTree = "<group>"; };
+		C1C7675E18C10E5A0081AA09 /* NKOBonjourAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKOBonjourAPI.m; sourceTree = "<group>"; };
+		C1C7677218C118640081AA09 /* NSImage+NKO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+NKO.h"; sourceTree = "<group>"; };
+		C1C7677318C118640081AA09 /* NSImage+NKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+NKO.m"; sourceTree = "<group>"; };
+		C1C7677518C11B660081AA09 /* NKOSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKOSocketManager.h; path = Service/NKOSocketManager.h; sourceTree = "<group>"; };
+		C1C7677618C11B660081AA09 /* NKOSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKOSocketManager.m; path = Service/NKOSocketManager.m; sourceTree = "<group>"; };
+		C1C7677818C11BAD0081AA09 /* NKOSocketDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NKOSocketDefinitions.h; path = Service/NKOSocketDefinitions.h; sourceTree = "<group>"; };
 		C1F8D6DD18BE974B00879533 /* Dashboard Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dashboard Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F8D6E018BE974B00879533 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C1F8D6E318BE974B00879533 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +95,8 @@
 		C1F8D70618BE974B00879533 /* Dashboard ServerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dashboard ServerTests-Info.plist"; sourceTree = "<group>"; };
 		C1F8D70818BE974B00879533 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C1F8D70A18BE974B00879533 /* Dashboard_ServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dashboard_ServerTests.m; sourceTree = "<group>"; };
+		C1F8D75C18BEA2B100879533 /* QServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QServer.h; sourceTree = "<group>"; };
+		C1F8D75D18BEA2B100879533 /* QServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QServer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B9152E18BF8FBA00898E9B /* Quartz.framework in Frameworks */,
+				C1B6700918BF6185000136AC /* AppleScriptKit.framework in Frameworks */,
+				C1B6700A18BF6185000136AC /* AppleScriptObjC.framework in Frameworks */,
 				C1F8D6E118BE974B00879533 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +123,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077F16A818C203FF00876BF0 /* Bonjour */ = {
+			isa = PBXGroup;
+			children = (
+				07BB93E018C0F5C800FE287F /* NKOAppDiscoverer.h */,
+				07BB93E118C0F5C800FE287F /* NKOAppDiscoverer.m */,
+				C1C7675D18C10E590081AA09 /* NKOBonjourAPI.h */,
+				C1C7675E18C10E5A0081AA09 /* NKOBonjourAPI.m */,
+			);
+			name = Bonjour;
+			sourceTree = "<group>";
+		};
+		077F16A918C2042700876BF0 /* AppleScript */ = {
+			isa = PBXGroup;
+			children = (
+				077F16AD18C204E000876BF0 /* NKOAppleScriptManager.h */,
+				077F16AE18C204E000876BF0 /* NKOAppleScriptManager.m */,
+			);
+			name = AppleScript;
+			sourceTree = "<group>";
+		};
+		07BB93E318C0F66A00FE287F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				07B9152A18BF8F5A00898E9B /* NSData+Base64.h */,
+				07B9152B18BF8F5A00898E9B /* NSData+Base64.m */,
+				C1C7677218C118640081AA09 /* NSImage+NKO.h */,
+				C1C7677318C118640081AA09 /* NSImage+NKO.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		C1C7674C18C10CF80081AA09 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				C1C7674D18C10CF80081AA09 /* JSON.h */,
+				C1C7674E18C10CF80081AA09 /* NSObject+SBJSON.h */,
+				C1C7674F18C10CF80081AA09 /* NSObject+SBJSON.m */,
+				C1C7675018C10CF80081AA09 /* NSString+SBJSON.h */,
+				C1C7675118C10CF80081AA09 /* NSString+SBJSON.m */,
+				C1C7675218C10CF80081AA09 /* SBJsonBase.h */,
+				C1C7675318C10CF80081AA09 /* SBJsonBase.m */,
+				C1C7675418C10CF80081AA09 /* SBJsonParser.h */,
+				C1C7675518C10CF80081AA09 /* SBJsonParser.m */,
+				C1C7675618C10CF80081AA09 /* SBJsonWriter.h */,
+				C1C7675718C10CF80081AA09 /* SBJsonWriter.m */,
+			);
+			path = SBJson;
+			sourceTree = "<group>";
+		};
 		C1F8D6D418BE974B00879533 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +194,9 @@
 		C1F8D6DF18BE974B00879533 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07B9152D18BF8FBA00898E9B /* Quartz.framework */,
+				C1B6700718BF6185000136AC /* AppleScriptKit.framework */,
+				C1B6700818BF6185000136AC /* AppleScriptObjC.framework */,
 				C1F8D6E018BE974B00879533 /* Cocoa.framework */,
 				C1F8D6FF18BE974B00879533 /* XCTest.framework */,
 				C1F8D6E218BE974B00879533 /* Other Frameworks */,
@@ -115,6 +217,9 @@
 		C1F8D6E618BE974B00879533 /* Dashboard Server */ = {
 			isa = PBXGroup;
 			children = (
+				07BB93E318C0F66A00FE287F /* Categories */,
+				C1F8D75F18BEACA000879533 /* Service */,
+				C1F8D71418BE983000879533 /* 3rd Parties */,
 				C1F8D6F218BE974B00879533 /* NKOAppDelegate.h */,
 				C1F8D6F318BE974B00879533 /* NKOAppDelegate.m */,
 				C1F8D6F518BE974B00879533 /* MainMenu.xib */,
@@ -152,6 +257,30 @@
 				C1F8D70718BE974B00879533 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1F8D71418BE983000879533 /* 3rd Parties */ = {
+			isa = PBXGroup;
+			children = (
+				C1C7674C18C10CF80081AA09 /* SBJson */,
+				C1F8D75C18BEA2B100879533 /* QServer.h */,
+				C1F8D75D18BEA2B100879533 /* QServer.m */,
+			);
+			name = "3rd Parties";
+			sourceTree = "<group>";
+		};
+		C1F8D75F18BEACA000879533 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				077F16A918C2042700876BF0 /* AppleScript */,
+				077F16A818C203FF00876BF0 /* Bonjour */,
+				C1C7677818C11BAD0081AA09 /* NKOSocketDefinitions.h */,
+				C1C7677518C11B660081AA09 /* NKOSocketManager.h */,
+				C1C7677618C11B660081AA09 /* NKOSocketManager.m */,
+				077F16B018C2079A00876BF0 /* NKOTriggerCommandSocketEvent.h */,
+				077F16B118C2079A00876BF0 /* NKOTriggerCommandSocketEvent.m */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,8 +382,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C7677718C11B660081AA09 /* NKOSocketManager.m in Sources */,
+				077F16AF18C204E000876BF0 /* NKOAppleScriptManager.m in Sources */,
+				C1F8D75E18BEA2B100879533 /* QServer.m in Sources */,
 				C1F8D6ED18BE974B00879533 /* main.m in Sources */,
+				C1C7675C18C10CF80081AA09 /* SBJsonWriter.m in Sources */,
+				07BB93E218C0F5C800FE287F /* NKOAppDiscoverer.m in Sources */,
+				C1C7675B18C10CF80081AA09 /* SBJsonParser.m in Sources */,
+				077F16B218C2079A00876BF0 /* NKOTriggerCommandSocketEvent.m in Sources */,
+				07B9152C18BF8F5A00898E9B /* NSData+Base64.m in Sources */,
+				C1C7675818C10CF80081AA09 /* NSObject+SBJSON.m in Sources */,
+				C1C7677418C118640081AA09 /* NSImage+NKO.m in Sources */,
+				C1C7675F18C10E5A0081AA09 /* NKOBonjourAPI.m in Sources */,
 				C1F8D6F418BE974B00879533 /* NKOAppDelegate.m in Sources */,
+				C1C7675918C10CF80081AA09 /* NSString+SBJSON.m in Sources */,
+				C1C7675A18C10CF80081AA09 /* SBJsonBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +530,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dashboard Server/Dashboard Server-Prefix.pch";
 				INFOPLIST_FILE = "Dashboard Server/Dashboard Server-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Nakio/nakioStudio/Workspace\\ X-Code/XcodeCommands/Dashboard\\ Server/Dashboard\\ Server/SocketKit/SocketKit",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -401,6 +547,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dashboard Server/Dashboard Server-Prefix.pch";
 				INFOPLIST_FILE = "Dashboard Server/Dashboard Server-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Nakio/nakioStudio/Workspace\\ X-Code/XcodeCommands/Dashboard\\ Server/Dashboard\\ Server/SocketKit/SocketKit",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -465,6 +615,7 @@
 				C1F8D71018BE974B00879533 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1F8D71118BE974B00879533 /* Build configuration list for PBXNativeTarget "Dashboard ServerTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +624,7 @@
 				C1F8D71318BE974B00879533 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

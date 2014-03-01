@@ -6,13 +6,20 @@
 //  Copyright (c) 2014 nakioStudio. All rights reserved.
 //
 
+#import <Cocoa/Cocoa.h>
+
 #import "NKOAppDelegate.h"
+#import "NKOSocketManager.h"
+
+@interface NKOAppDelegate()
+
+@end
 
 @implementation NKOAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [[NKOSocketManager sharedManager] startServer];
 }
 
 @end

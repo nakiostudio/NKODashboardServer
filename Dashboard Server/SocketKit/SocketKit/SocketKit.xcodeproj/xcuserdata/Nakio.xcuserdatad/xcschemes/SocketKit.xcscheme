@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C1F8D6DC18BE974B00879533"
-               BuildableName = "Dashboard Server.app"
-               BlueprintName = "Dashboard Server"
-               ReferencedContainer = "container:Dashboard Server.xcodeproj">
+               BlueprintIdentifier = "FA616AD21372006F00B2DBBC"
+               BuildableName = "SocketKit"
+               BlueprintName = "SocketKit"
+               ReferencedContainer = "container:SocketKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C1F8D6FD18BE974B00879533"
-               BuildableName = "Dashboard ServerTests.xctest"
-               BlueprintName = "Dashboard ServerTests"
-               ReferencedContainer = "container:Dashboard Server.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C1F8D6DC18BE974B00879533"
-            BuildableName = "Dashboard Server.app"
-            BlueprintName = "Dashboard Server"
-            ReferencedContainer = "container:Dashboard Server.xcodeproj">
+            BlueprintIdentifier = "FA616AD21372006F00B2DBBC"
+            BuildableName = "SocketKit"
+            BlueprintName = "SocketKit"
+            ReferencedContainer = "container:SocketKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C1F8D6DC18BE974B00879533"
-            BuildableName = "Dashboard Server.app"
-            BlueprintName = "Dashboard Server"
-            ReferencedContainer = "container:Dashboard Server.xcodeproj">
+            BlueprintIdentifier = "FA616AD21372006F00B2DBBC"
+            BuildableName = "SocketKit"
+            BlueprintName = "SocketKit"
+            ReferencedContainer = "container:SocketKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C1F8D6DC18BE974B00879533"
-            BuildableName = "Dashboard Server.app"
-            BlueprintName = "Dashboard Server"
-            ReferencedContainer = "container:Dashboard Server.xcodeproj">
+            BlueprintIdentifier = "FA616AD21372006F00B2DBBC"
+            BuildableName = "SocketKit"
+            BlueprintName = "SocketKit"
+            ReferencedContainer = "container:SocketKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
