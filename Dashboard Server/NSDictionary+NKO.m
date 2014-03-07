@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 nakioStudio. All rights reserved.
 //
 
+#import "NSUserDefaults+NKO.h"
 #import "NSDictionary+NKO.h"
 #import "NSData+Base64.h"
 #import "NSString+NKO.h"
@@ -31,7 +32,7 @@
         
         NSString *allTogetherKey = [[NSString stringWithFormat:@"%@%@%@%@",eventKey, [timestampKey nko_md5], timestampKey, [eventKey nko_md5]] nko_md5];
         
-        NSString *token = [NSString nko_hmacsha1:allTogetherKey secret:@"future"];
+        NSString *token = [NSString nko_hmacsha1:allTogetherKey secret:[[NSUserDefaults standardUserDefaults] nko_secretKeyWithString]];
         
         return token;
     }

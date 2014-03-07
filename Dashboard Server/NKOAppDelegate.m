@@ -10,6 +10,7 @@
 
 #import "NKOAppDelegate.h"
 #import "NKOSocketManager.h"
+#import "NSUserDefaults+NKO.h"
 
 @interface NKOAppDelegate()
 
@@ -19,6 +20,14 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    if ([[NSUserDefaults standardUserDefaults] nko_secretKeyWithString] == nil){
+        [[NSUserDefaults standardUserDefaults] nko_setSecretKeyWithString:@"1234"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    else{
+        NSLog(@"Key %@", [[NSUserDefaults standardUserDefaults] nko_secretKeyWithString]);
+    }
+    
     [[NKOSocketManager sharedManager] startServer];
 }
 
