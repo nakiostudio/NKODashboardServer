@@ -14,6 +14,9 @@
 
 @interface NKOAppDelegate()
 
+@property (nonatomic, strong) NSStatusItem *statusBar;
+@property (nonatomic, weak) IBOutlet NSMenu *mainMenu;
+
 @end
 
 @implementation NKOAppDelegate
@@ -29,6 +32,16 @@
     }
     
     [[NKOSocketManager sharedManager] startServer];
+}
+
+- (void)awakeFromNib
+{
+    self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    
+    self.statusBar.title = @"Dashboard";
+    
+    self.statusBar.menu = self.mainMenu;
+    self.statusBar.highlightMode = YES;
 }
 
 @end
