@@ -13,6 +13,7 @@
 #import "NKOAppDiscoverer.h"
 #import "NKOBonjourAPI.h"
 
+#import "NSDictionary+NKO.h"
 #import "NSObject+SBJSON.h"
 #import "NSString+SBJSON.h"
 
@@ -96,6 +97,11 @@
         NSLog(@"Message received %@", message);
         
         NSDictionary *eventDictionary = [messageParsed JSONValue];
+        
+        if ([eventDictionary nko_isTrusted] == NO){
+            NSLog(@"Wrong signature - disconnect");
+            [[NKOBonjourAPI sharedInstance] disconnect];
+        }
         
         if (eventDictionary != nil && eventDictionary[@"event"] != nil){
             NSString *eventName = eventDictionary[@"event"];
