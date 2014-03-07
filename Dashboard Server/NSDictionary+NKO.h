@@ -10,4 +10,8 @@
 
 @interface NSDictionary (NKO)
 
+- (BOOL)nko_isTrusted;
+- (NSString*)nko_authKey;
+- (NSDictionary*)nko_authDictionary;
+
 @end
