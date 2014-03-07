@@ -10,4 +10,7 @@
 
 @interface NSString (NKO)
 
+- (NSString *)nko_md5;
++ (NSString*)nko_hmacsha1:(NSString *)data secret:(NSString *)key;
+
 @end
