@@ -25,7 +25,7 @@
 
 - (NSString*)nko_authKey
 {
-    if (self[@"event"] != nil && self[@"token"] != nil && self[@"timestamp"] != nil){
+    if (self[@"event"] != nil && self[@"timestamp"] != nil){
         NSString *eventKey = [NSString stringWithFormat:@"%@%@", self[@"event"], [self[@"timestamp"] nko_md5]];
         NSString *timestampKey = [NSString stringWithFormat:@"%@%@", self[@"timestamp"], [self[@"event"] nko_md5]];
         
