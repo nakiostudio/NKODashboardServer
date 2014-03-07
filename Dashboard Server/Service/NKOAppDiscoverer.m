@@ -65,7 +65,13 @@
 {
     NSImage *appIconImage = [[NSWorkspace sharedWorkspace] iconForFile:[NSString stringWithFormat:@"/Applications/%@.app",appName]];
     NSImage *appIconScaledImage = [appIconImage scaleImageToSize:CGSizeMake(80.f, 80.f)];
-    NSData *imgData = [appIconScaledImage TIFFRepresentation];
+    
+    CGImageRef imageConext = [appIconScaledImage CGImageForProposedRect:nil context:nil hints:nil];
+    
+    NSBitmapImageRep *bitmapRepresentation = [[NSBitmapImageRep alloc] initWithCGImage:imageConext];
+    [bitmapRepresentation setSize:appIconScaledImage.size];
+    
+    NSData *imgData = [bitmapRepresentation representationUsingType:NSPNGFileType properties:nil];
     
     return [imgData base64EncodedString];
 }
