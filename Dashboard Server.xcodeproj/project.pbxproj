@@ -10,6 +10,7 @@
 		0765997D18C9CF0800822B47 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765997C18C9CF0800822B47 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0765998218C9E39E00822B47 /* NSDictionary+NKO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765998118C9E39E00822B47 /* NSDictionary+NKO.m */; };
 		0765998518C9E5EE00822B47 /* NSString+NKO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765998418C9E5EE00822B47 /* NSString+NKO.m */; };
+		0765998B18C9FDA700822B47 /* NSUserDefaults+NKO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765998A18C9FDA700822B47 /* NSUserDefaults+NKO.m */; };
 		077F16AF18C204E000876BF0 /* NKOAppleScriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 077F16AE18C204E000876BF0 /* NKOAppleScriptManager.m */; };
 		077F16B218C2079A00876BF0 /* NKOTriggerCommandSocketEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 077F16B118C2079A00876BF0 /* NKOTriggerCommandSocketEvent.m */; };
 		07B9152E18BF8FBA00898E9B /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B9152D18BF8FBA00898E9B /* Quartz.framework */; };
@@ -55,6 +56,8 @@
 		0765998118C9E39E00822B47 /* NSDictionary+NKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NKO.m"; sourceTree = "<group>"; };
 		0765998318C9E5EE00822B47 /* NSString+NKO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NKO.h"; sourceTree = "<group>"; };
 		0765998418C9E5EE00822B47 /* NSString+NKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NKO.m"; sourceTree = "<group>"; };
+		0765998918C9FDA700822B47 /* NSUserDefaults+NKO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+NKO.h"; sourceTree = "<group>"; };
+		0765998A18C9FDA700822B47 /* NSUserDefaults+NKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+NKO.m"; sourceTree = "<group>"; };
 		077F16AD18C204E000876BF0 /* NKOAppleScriptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKOAppleScriptManager.h; path = Service/NKOAppleScriptManager.h; sourceTree = "<group>"; };
 		077F16AE18C204E000876BF0 /* NKOAppleScriptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKOAppleScriptManager.m; path = Service/NKOAppleScriptManager.m; sourceTree = "<group>"; };
 		077F16B018C2079A00876BF0 /* NKOTriggerCommandSocketEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKOTriggerCommandSocketEvent.h; path = Service/NKOTriggerCommandSocketEvent.h; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				0765998118C9E39E00822B47 /* NSDictionary+NKO.m */,
 				0765998318C9E5EE00822B47 /* NSString+NKO.h */,
 				0765998418C9E5EE00822B47 /* NSString+NKO.m */,
+				0765998918C9FDA700822B47 /* NSUserDefaults+NKO.h */,
+				0765998A18C9FDA700822B47 /* NSUserDefaults+NKO.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 				C1C7675F18C10E5A0081AA09 /* NKOBonjourAPI.m in Sources */,
 				C1F8D6F418BE974B00879533 /* NKOAppDelegate.m in Sources */,
 				C1C7675918C10CF80081AA09 /* NSString+SBJSON.m in Sources */,
+				0765998B18C9FDA700822B47 /* NSUserDefaults+NKO.m in Sources */,
 				C1C7675A18C10CF80081AA09 /* SBJsonBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
