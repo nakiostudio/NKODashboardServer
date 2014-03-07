@@ -10,4 +10,7 @@
 
 @interface NSUserDefaults (NKO)
 
+- (void)nko_setSecretKeyWithString:(NSString*)key;
+- (NSString*)nko_secretKeyWithString;
+
 @end
