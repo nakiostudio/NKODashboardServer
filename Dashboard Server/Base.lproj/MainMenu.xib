@@ -14,6 +14,7 @@
         <customObject id="494" customClass="NKOAppDelegate">
             <connections>
                 <outlet property="mainMenu" destination="WAq-X1-eTM" id="3JG-5e-WEh"/>
+                <outlet property="preferencesWindow" destination="6OY-LV-fFv" id="Tgr-w8-2CT"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
@@ -57,7 +58,7 @@
                 </subviews>
             </view>
         </window>
-        <menu id="WAq-X1-eTM">
+        <menu id="WAq-X1-eTM" customClass="NKOMainMenuController">
             <items>
                 <menuItem title="Disable server" id="V7C-Ef-NPf">
                     <attributedString key="attributedTitle"/>
@@ -71,7 +72,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Apps supported" id="Sej-aP-Nq2">
                         <items>
-                            <menuItem title="Item" id="Bke-cu-HnB">
+                            <menuItem title="None" id="Bke-cu-HnB">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
                         </items>
@@ -81,7 +82,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Device connected" id="XCE-Zs-HGB">
                         <items>
-                            <menuItem title="Item" id="auD-4o-0kk">
+                            <menuItem title="None" id="auD-4o-0kk">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
                         </items>
@@ -95,26 +96,46 @@
                     </connections>
                 </menuItem>
             </items>
+            <connections>
+                <outlet property="disableServerMenuItem" destination="V7C-Ef-NPf" id="dWo-oz-o7m"/>
+                <outlet property="preferencesMenuItem" destination="A8v-hp-zvP" id="6IV-Ch-GzK"/>
+            </connections>
         </menu>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="qqX-SW-TFf">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+        <toolbar implicitIdentifier="09D11707-F4A3-4FD5-970E-AC5832E91C2B" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="23b-Up-3yv">
+            <allowedToolbarItems>
+                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="gVB-kn-nua"/>
+                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="YFf-lM-UmV"/>
+                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="BoC-g9-h1z"/>
+                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="pud-rx-8tN"/>
+            </allowedToolbarItems>
+            <defaultToolbarItems>
+                <toolbarItem reference="gVB-kn-nua"/>
+                <toolbarItem reference="pud-rx-8tN"/>
+                <toolbarItem reference="YFf-lM-UmV"/>
+            </defaultToolbarItems>
+        </toolbar>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="6OY-LV-fFv">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="1036" y="520" width="480" height="270"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
-            <view key="contentView" id="iV8-yb-I0F">
+            <view key="contentView" id="1Id-bR-w4y">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
             </view>
-        </window>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IqS-1M-q1P">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="283" y="305" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
-            <view key="contentView" id="RDJ-9S-4Ae">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
+            <toolbar key="toolbar" implicitIdentifier="AF51D2F1-949F-42F5-B5A2-F59450169645" displayMode="iconAndLabel" sizeMode="regular" id="5Fu-R7-iWj">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" explicitItemIdentifier="NSToolbarShowApplicationsItem" id="adF-RV-isf"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" explicitItemIdentifier="NSToolbarShowSecurityItem" id="zfy-oM-Zef"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="dC3-S7-vFa"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="gnb-ez-oDr"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="fh0-hs-mMc"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="adF-RV-isf"/>
+                    <toolbarItem reference="zfy-oM-Zef"/>
+                    <toolbarItem reference="fh0-hs-mMc"/>
+                </defaultToolbarItems>
+            </toolbar>
         </window>
     </objects>
 </document>

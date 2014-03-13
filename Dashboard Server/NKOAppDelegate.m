@@ -9,13 +9,19 @@
 #import <Cocoa/Cocoa.h>
 
 #import "NKOAppDelegate.h"
+
+#import "NKOBonjourAPI.h"
 #import "NKOSocketManager.h"
 #import "NSUserDefaults+NKO.h"
+
+#import "NKOMainMenuController.h"
 
 @interface NKOAppDelegate()
 
 @property (nonatomic, strong) NSStatusItem *statusBar;
-@property (nonatomic, weak) IBOutlet NSMenu *mainMenu;
+
+@property (nonatomic, weak) IBOutlet NKOMainMenuController *mainMenu;
+@property (nonatomic, weak) IBOutlet NSWindow *preferencesWindow;
 
 @end
 
@@ -36,12 +42,39 @@
 
 - (void)awakeFromNib
 {
+    self.mainMenu.preferencesItemSelectedBlock = [self _preferencesItemSelectedBlock];
+    self.mainMenu.disableServerItemSelectedBlock = [self _disableServerItemSelectedBlock];
+    
     self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    
     self.statusBar.title = @"Dashboard";
-    
-    self.statusBar.menu = self.mainMenu;
     self.statusBar.highlightMode = YES;
+    self.statusBar.menu = self.mainMenu;
+}
+
+#pragma mark - Lazy loading
+- (NKOMainMenuPreferencesItemSelectedBlock)_preferencesItemSelectedBlock
+{
+    __weak NKOAppDelegate *weakSelf = self;
+    
+    NKOMainMenuPreferencesItemSelectedBlock itemSelectedBlock = ^(){
+        [weakSelf.preferencesWindow makeKeyAndOrderFront:NSApp];
+    };
+    
+    return itemSelectedBlock;
+}
+
+- (NKOMainMenuDisableServerItemSelectedBlock)_disableServerItemSelectedBlock
+{
+    NKOMainMenuDisableServerItemSelectedBlock itemSelectedBlock = ^(BOOL disabled){
+        if (disabled){
+            [[NKOBonjourAPI sharedInstance] deregisterServer];
+        }
+        else{
+            [[NKOBonjourAPI sharedInstance] registerServer];
+        }
+    };
+    
+    return itemSelectedBlock;
 }
 
 @end

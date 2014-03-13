@@ -160,6 +160,7 @@
 			children = (
 				07892CD618D094260051BE6B /* NKOMainMenuController.h */,
 				07892CD718D094260051BE6B /* NKOMainMenuController.m */,
+				C1F8D6F518BE974B00879533 /* MainMenu.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -244,14 +245,13 @@
 		C1F8D6E618BE974B00879533 /* Dashboard Server */ = {
 			isa = PBXGroup;
 			children = (
-				07892CD518D093CE0051BE6B /* UI */,
 				07BB93E318C0F66A00FE287F /* Categories */,
 				C1F8D75F18BEACA000879533 /* Service */,
-				C1F8D71418BE983000879533 /* 3rd Parties */,
+				07892CD518D093CE0051BE6B /* UI */,
 				C1F8D6F218BE974B00879533 /* NKOAppDelegate.h */,
 				C1F8D6F318BE974B00879533 /* NKOAppDelegate.m */,
-				C1F8D6F518BE974B00879533 /* MainMenu.xib */,
 				C1F8D6F818BE974B00879533 /* Images.xcassets */,
+				C1F8D71418BE983000879533 /* 3rd Parties */,
 				C1F8D6E718BE974B00879533 /* Supporting Files */,
 			);
 			path = "Dashboard Server";

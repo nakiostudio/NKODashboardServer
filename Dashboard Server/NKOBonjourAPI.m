@@ -100,6 +100,19 @@ NSString *const NKOTcpPrefix = @"_fwt._tcp.";
     }
 }
 
+- (void)registerServer
+{
+    if (self.server.isDeregistered){
+        [self.server reregister];
+    }
+}
+
+- (void)deregisterServer
+{
+    [self closeStreams];
+    [self.server deregister];
+}
+
 - (void)stream:(NSStream *)stream handleEvent:(NSStreamEvent)eventCode
 {
     switch(eventCode)

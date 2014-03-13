@@ -8,6 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface NKOMainMenuController : NSViewController
+
+typedef void (^NKOMainMenuPreferencesItemSelectedBlock)();
+typedef void (^NKOMainMenuDisableServerItemSelectedBlock)(BOOL disableServer);
+
+@interface NKOMainMenuController : NSMenu
+
+@property (nonatomic, strong) NKOMainMenuPreferencesItemSelectedBlock preferencesItemSelectedBlock;
+@property (nonatomic, strong) NKOMainMenuDisableServerItemSelectedBlock disableServerItemSelectedBlock;
 
 @end

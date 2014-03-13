@@ -17,6 +17,8 @@ typedef void (^NKOBonjourAPIMessageReceivedBlock)(NSString *message);
 - (void)startServerWithMessageReceivedBlock:(NKOBonjourAPIMessageReceivedBlock)messageReceivedBlock;
 - (void)connectToService:(NSNetService*)service;
 - (void)sendMessage:(NSString*)message;
+- (void)deregisterServer;
+- (void)registerServer;
 - (void)disconnect;
 
 @end
